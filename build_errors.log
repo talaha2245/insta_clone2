@@ -1,0 +1,97 @@
+
+> nextjs-15-social-media-app@0.1.0 build
+> next build
+
+  ▲ Next.js 15.0.0-rc.0
+  - Experiments (use with caution):
+    · staleTimes
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/24) ...
+   Generating static pages (6/24) 
+   Generating static pages (12/24) 
+   Generating static pages (18/24) 
+PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+error: Environment variable not found: POSTGRES_PRISMA_URL.
+  -->  schema.prisma:14
+   | 
+13 |   provider  = "postgresql"
+14 |   url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+   | 
+
+Validation Error Count: 1
+    at _n.handleRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:7227)
+    at _n.handleAndLogRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:6235)
+    at _n.request (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:5919)
+    at async l (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:131:9116)
+    at async x.revalidate (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:14:15076)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/chunks/1338.js:1:4182
+    at async w (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:20:129) {
+  clientVersion: '5.16.1',
+  errorCode: undefined,
+  digest: '1613977599'
+}
+PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+error: Environment variable not found: POSTGRES_PRISMA_URL.
+  -->  schema.prisma:14
+   | 
+13 |   provider  = "postgresql"
+14 |   url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+   | 
+
+Validation Error Count: 1
+    at _n.handleRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:7227)
+    at _n.handleAndLogRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:6235)
+    at _n.request (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:5919)
+    at async l (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:131:9116)
+    at async x.revalidate (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:14:15076)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/chunks/1338.js:1:4182
+    at async w (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:20:129) {
+  clientVersion: '5.16.1',
+  errorCode: undefined,
+  digest: '1613977599'
+}
+
+Error occurred prerendering page "/bookmarks". Read more: https://nextjs.org/docs/messages/prerender-error
+
+PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+error: Environment variable not found: POSTGRES_PRISMA_URL.
+  -->  schema.prisma:14
+   | 
+13 |   provider  = "postgresql"
+14 |   url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+   | 
+
+Validation Error Count: 1
+    at _n.handleRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:7227)
+    at _n.handleAndLogRequestError (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:6235)
+    at _n.request (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:122:5919)
+    at async l (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/@prisma/client/runtime/library.js:131:9116)
+    at async x.revalidate (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:14:15076)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/chunks/1338.js:1:4182
+    at async w (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/.next/server/app/(main)/users/[username]/page.js:20:129)
+
+> Build error occurred
+Error: Export encountered an error on /bookmarks, exiting due to prerenderEarlyExit: true being set
+    at /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/export/index.js:481:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 23)
+    at async exportAppImpl (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/export/index.js:442:21)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/export/index.js:625:16
+    at async Span.traceAsyncFn (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/trace/trace.js:157:20)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/build/index.js:1690:42
+    at async Span.traceAsyncFn (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/trace/trace.js:157:20)
+    at async /Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/build/index.js:1548:17
+    at async Span.traceAsyncFn (/Users/talahanuman/Desktop/assignment/nextjs-15-social-media-app/node_modules/next/dist/trace/trace.js:157:20)
